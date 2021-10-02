@@ -5,7 +5,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    style= margin-top: 80px;
     border-bottom: 1px solid;
 }
 .nav_links li{
@@ -15,9 +14,10 @@ header{
 .nav_links a{
     font-size: larger;
     text-decoration: none;
-    color: black;
+    color: #A82810;
     padding: 10px;
     transition: 1s;
+    border-radius: 15px;
 }
 .nav_links a:hover{
     background-color: #F67B50;
@@ -27,12 +27,12 @@ button{
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
-    background-color: #A82810;
+    background-color: #A82810AA;
     cursor: pointer;
+    transition: 0.5s;
 }
 button:hover{
-    background-color: rgba(inherit,inherit,inherit,0);
-    cursor: pointer;
+    background-color: #A82810;
 }
 footer{
     display: flex;
