@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style/homepage.css">
+    <script src="scripts/login_popup.js" charset="utf-8"></script>
     <title>Karlo Adopt!</title>
 </head>
 <body>
@@ -18,10 +19,36 @@
             </ul>
         </nav>
         <div class="userlogins">
-            <a href="#"><button type="button"> Login </button></a>
+            <a href="#"><button type="button" id="login-button"> Login </button></a>
             <a href="#"><button type="button"> Sign Up </button></a>
         </div>
     </header>
+
+    <!-- log in/sign up -  pop up form -->
+    <div class="popup">
+        <div class="close-button">&times;</div> <!-- &times; prints an x close -->
+        <div class="login-form">
+            <h2> Log In </h2>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Enter email">
+            </div>
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Enter password">
+            </div>
+            <div class="form-element">
+                <input type="checkbox" name="remember-me" id="remember-me" placeholder="Enter password">
+                <label for="remember-me">Remember Me</label>
+            </div>
+            <div class="form-element">
+                <button type="submit"> Login </button>
+            </div>
+            <div class="form-element">
+                <a href="#"> Forgot Password? </a>
+            </div>
+        </div>
+    </div>
 
     <div class="banner">
 		<div class="image-container">
@@ -39,13 +66,10 @@
 	</div>
 
 
-    <!-- log in/sign up -  pop up form -->
-    
-
-
     <div class="about-container">
-
     </div>
+
+
     <br>
     <div>
         <footer>
@@ -53,5 +77,6 @@
             <!-- contact details: email, ph number, address, etc. -->
         </footer>
     </div>
+
 </body>
 </html>

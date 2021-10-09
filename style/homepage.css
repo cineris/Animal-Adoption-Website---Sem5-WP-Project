@@ -1,9 +1,11 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 body{
     background-color: #FEFFCB;
+    font-family: sans-serif;
 }
 
 /* navbar styles */
@@ -48,7 +50,7 @@ header img{
 }
 
 /* login/signup buttons */
-button{
+header button{
     text-decoration: none;
     border: none;
     border-radius: 20px;
@@ -62,8 +64,94 @@ button{
 	text-transform: uppercase;
     transition: 0.5s;
 }
-button:hover{
+header button:hover{
     background-color: #26B5ED;
+}
+
+
+/* popup login window */
+.popup{
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    width: 300px;
+    padding: 20px;
+    height: auto;
+    transform: translate(-50%, -50%) scale(1.25);
+    background: #FFFFFF;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+}
+.popup.active{
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+}
+.popup .close-button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    background: #888888;
+    color: #eeeeee;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.popup .login-form h2{
+    text-align: center;
+    font-family: sans-serif;
+    margin: 10px 0px 20px;
+}
+.popup .login-form .form-element{
+    margin: 15px 0px;
+}
+.popup .login-form .form-element input[type='email'],
+.popup .login-form .form-element input[type='password']{
+    margin-top: 5px;
+    display: block;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+}
+.popup .login-form .form-element input[type='checkbox']{
+    margin-right:5px;
+}
+.popup .login-form .form-element button{
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #26B5ED88;
+    cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+    color: #fff;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+    transition: 0.5s;
+    /* centering button */
+    margin: 0;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.popup .login-form .form-element a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
 }
 
 /* banner styles */
