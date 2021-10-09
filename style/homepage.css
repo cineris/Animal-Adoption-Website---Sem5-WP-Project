@@ -3,64 +3,88 @@
     padding: 0;
 }
 body{
-    background-color: #FBC490;
+    background-color: #FEFFCB;
 }
 
 /* navbar styles */
+/* logo */
 header{
     display: flex;
-    margin: 3px;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     border-bottom: 1px solid;
+    background-image: linear-gradient(to right bottom, #FFD939,#FEFFCB);
 }
 header img{
-    width: 6%;
+    width: 80px;
+    height: 80px;
     cursor: pointer;
+    margin-right: auto;
+}
+
+/* adopt, donation, sponsor nav links */
+.nav_links{
+    margin-right: 10px;
 }
 .nav_links li{
     list-style: none;
     display: inline-block;
 }
 .nav_links a{
-    font-size: larger;
     text-decoration: none;
-    color: #A82810;
+    color: black;
     padding: 10px;
-    transition: 1s;
     border-radius: 15px;
-}
-.nav_links a:hover{
-    background-color: #F67B50;
-}
-button{
-    text-decoration: none;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    background-color: #A82810AA;
-    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #26B5ED77;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
     transition: 0.5s;
 }
-.userlogins {
-    transform: translate(-20px);
+.nav_links a:hover{
+    color: #26B5ED;
+}
+
+/* login/signup buttons */
+button{
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #26B5ED88;
+    cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+    color: #fff;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+    transition: 0.5s;
 }
 button:hover{
-    background-color: #A82810;
+    background-color: #26B5ED;
 }
-
 
 /* banner styles */
-
-.bannerpic
-{
+.image-container{
+    display: flex;
+    justify-content: center;
+    background-color: #FFD939;
+    width: 50%;
+    margin: 10px 0px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.bannerpic{
 	height: 500px;
 	width: auto;
-    margin-left: 20px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 15px;
 }
 
-.bannerlink
-{
+.bannerlink{
 	margin: 80px 20px 0 0;
     height: inherit;
 	padding-top: 16px;
@@ -70,22 +94,19 @@ button:hover{
 	border-bottom: 10px double #A82810;
 }
 
-.bannerlink h1
-{
+.bannerlink h1{
 	font-size: 74px;
     text-align: center;
 }
 
-.bannerlink p
-{
+.bannerlink p{
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
 	padding: 20px 0;
 }
 
-.bannerlink a
-{
+.bannerlink a{
 	border-radius: 50%;
 	vertical-align: middle;
 	display: inline-block;
@@ -97,14 +118,12 @@ button:hover{
     transition-duration: 0.4s;
 }
 
-.bannerlink a:hover
-{
+.bannerlink a:hover{
 	background-color: #A01607;
 	transform: scale(1.25,1.25);
 }
 
-.bannerlink img
-{
+.bannerlink img{
 	height: 100%;
 	width: auto;
 }
