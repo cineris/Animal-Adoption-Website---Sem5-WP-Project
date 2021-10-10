@@ -2,13 +2,44 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <script src="scripts/donate.js" charset="utf-8"></script>
+        <title>Donate</title>
     </head>
+    
     <body>
         <!-- php kaise kare idhar? -->
         <img src="" alt="look at us we cute give money">
         <form action="">
             <!-- donation form: name, email, address, contact, mode of payment (dropdown: credit card, UPI, netbanking: add html inputs using javascript), amount -->
+            <label for="Name">Name:</label>
+            <input type="text" name="Name"id="Name">
+            <br><br>
+        
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <br><br>
+
+            <label for="contact">Contact Number: </label>
+            <input type="number" name="contact" id="contact">
+            <br><br>
+
+            <h4>Address:</h4>
+            <textarea name="address" id="address" cols="30" rows="10"></textarea>
+            <br><br>
+
+            <label for="amount">Amount:</label>
+            <input type="number" name="amount" id="amount">
+            <br><br>
+
+            <label for="mop">Mode of Payment:</label>
+            <select name="mop" id="mop">
+                <option value="1">Card</option>
+                <option value="2">UPI</option>
+                <option value="3">Net Banking</option>
+            </select>
+            <br><br>
+
+            <input type="submit" value="Submit" onclick="">
         </form>
     </body>
 </html>
