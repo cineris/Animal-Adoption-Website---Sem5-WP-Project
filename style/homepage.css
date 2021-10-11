@@ -39,7 +39,7 @@ header img{
     border-radius: 15px;
     font-family: sans-serif;
     font-size: 14px;
-    color: #26B5ED77;
+    color: #26B5ED;
 	font-weight: bold;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -47,6 +47,7 @@ header img{
 }
 .nav_links a:hover{
     color: #26B5ED;
+    opacity: 65%;
 }
 
 /* login/signup buttons */
@@ -54,7 +55,7 @@ header button{
     text-decoration: none;
     border: none;
     border-radius: 20px;
-    background-color: #26B5ED88;
+    background-color: #26B5ED;
     cursor: pointer;
 	font-size: 12px;
 	font-weight: bold;
@@ -66,6 +67,7 @@ header button{
 }
 header button:hover{
     background-color: #26B5ED;
+    opacity: 75%;
 }
 
 
