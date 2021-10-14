@@ -72,7 +72,23 @@ header button:hover{
 
 
 /* popup login window */
-.popup{
+.popup.lg{
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    width: 300px;
+    padding: 20px;
+    height: auto;
+    transform: translate(-50%, -50%) scale(1.25);
+    background: #FFFFFF;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+}
+.popup.su{
     position: absolute;
     top: -150%;
     left: 50%;
@@ -133,7 +149,7 @@ header button:hover{
     text-decoration: none;
     border: none;
     border-radius: 20px;
-    background-color: #26B5ED88;
+    background-color: #26B5ED;
     cursor: pointer;
 	font-size: 12px;
 	font-weight: bold;
