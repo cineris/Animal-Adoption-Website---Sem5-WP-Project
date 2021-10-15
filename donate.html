@@ -2,15 +2,18 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <script src="scripts/donate.js" charset="utf-8"></script>
+        <script src="scripts/donate.js">
+    
+            
+        </script>
         <title>Donate</title>
     </head>
     
     <body>
         <!-- php kaise kare idhar? -->
         <img src="" alt="look at us we cute give money">
-        <form action="" onsubmit="validate()">
-            <label for="Name">Name:</label>
+        <form onsubmit="validate()">
+            <label for="Name">First Name:</label>
             <input type="text" name="Name"id="Name">
             <br><br>
         
@@ -32,12 +35,13 @@
             <br><br>
 
             <label for="mop">Mode of Payment:</label>
-            <select name="mop" id="mop">
-                <option value="0">Choose</option>
-                <option value="1">Card</option>
+            <select name="mop" id="mop" onclick="dropdown()">
+                <option value="0">Choose</option> 
+                <option value="1">Debit/Credit Card</option>
                 <option value="2">UPI</option>
                 <option value="3">Net Banking</option>
             </select>
+            <div id = "payment"></div>
             <br><br>
 
             <input type="submit" value="Submit">
