@@ -6,12 +6,28 @@
         <link rel="stylesheet" href="/style/donate.css">
         <title>Donate</title>
     </head>
-
     <body>
-        <!-- php kaise kare idhar? -->
-        <img src="" alt="look at us we cute give money">
+        <!-- header and navbar -->
+        <div class="nav-bg-container">
+        <header>
+            <img src="images/corgi.png" alt="logo">
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="adopt.html">Adopt</a></li>
+                    <li><a href="donate.html">Donation</a></li>
+                    <li><a href="sponsor.html">Sponsor</a></li>
+                </ul>
+            </nav>
+            <div class="userlogins">
+                <a href="#"><button type="button" id="login-button"> Login </button></a>
+                <a href="#"><button type="button" id="signup-button"> Sign Up </button></a>
+            </div>
+        </header>
+        </div>
+
+        <!-- donation form -->
         <div class="donation-form-container">
-        <form class="donation-form" onsubmit="validate()">
+        <form class="donation-form" action="http://localhost/WP/WP_Project/donate.php" onsubmit="validate()">
             <div class="form-element">
                 <label for="Name">Name:</label>
                 <input type="text" name="Name" id="Name">
