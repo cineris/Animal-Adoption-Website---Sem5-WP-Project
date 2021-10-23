@@ -44,15 +44,15 @@ header img{
     border-radius: 15px;
     font-family: sans-serif;
     font-size: 14px;
-    color: #040CB3;  /* purple: 6315B3*/
+    color: #fff;  /* blue:040CB3 purple: 6315B3*/
 	font-weight: bold;
 	letter-spacing: 1px;
 	text-transform: uppercase;
     transition: 0.5s;
 }
 .nav_links a:hover{
-    color: #186ED6;
-    opacity: 65%;
+    color: #040CB3;
+    opacity: 90%;
 }
 
 /* login/signup buttons */
@@ -76,7 +76,7 @@ header button{
 }
 header button:hover{
     background-color: #186ED6;
-    opacity: 75%;
+    opacity: 95%;
 }
 
 
