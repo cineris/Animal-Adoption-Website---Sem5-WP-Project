@@ -21,7 +21,7 @@
 
     $sql = "CREATE TABLE if not exists donations(
         name VARCHAR(30) NOT NULL,
-        email_id VARCHAR(30) NOT NULL,
+        email_id VARCHAR(30) NOT NULL PRIMARY KEY,
         phone_number NUMERIC NOT NULL,
         address VARCHAR(50) NOT NULL,
         amount NUMERIC NOT NULL),

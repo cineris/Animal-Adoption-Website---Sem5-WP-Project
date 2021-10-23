@@ -19,7 +19,7 @@
 
     $sql = "CREATE TABLE if not exists adopt(
         name VARCHAR(30) NOT NULL,
-        email_id VARCHAR(30) NOT NULL,
+        email_id VARCHAR(30) NOT NULL PRIMARY KEY,
         phone_number NUMERIC NOT NULL,
         petname VARCHAR(50) NOT NULL)";
 

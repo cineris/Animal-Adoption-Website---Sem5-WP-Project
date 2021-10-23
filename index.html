@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- color palette - https://www.canva.com/colors/color-palettes/toasted-peach/ -->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style/homepage.css">
+    <script src="scripts/login_popup.js" charset="utf-8"></script>
+    <title>Karlo Adopt!</title>
+</head>
+<body>
+    <!-- header and navbar -->
+    <div class="nav-bg-container">
+    <header>
+        <a href="index.html"><img src="images/corgi.png" alt="logo"></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="adopt.html">Adopt</a></li>
+                <li><a href="donate.html">Donation</a></li>
+                <li><a href="sponsor.html">Sponsor</a></li>
+            </ul>
+        </nav>
+        <div class="userlogins">
+            <a href="#"><button type="button" id="login-button"> Login </button></a>
+            <a href="#"><button type="button" id="signup-button"> Sign Up </button></a>
+        </div>
+    </header>
+    </div>
+
+    <!-- log in/sign up -  pop up form -->
+    <div class="popup lg">
+        <div class="close-button" id="close-login">&times;</div> <!-- &times; prints an x close -->
+        <div class="login-form">
+            <h2> Log In </h2>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Enter email">
+            </div>
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Enter password">
+            </div>
+            <div class="form-element">
+                <input type="checkbox" name="remember-me" id="remember-me">
+                <label for="remember-me">Remember Me</label>
+            </div>
+            <div class="form-element">
+                <button type="submit"> Login </button>
+            </div>
+            <div class="form-element">
+                <a href="#"> Forgot Password? </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- sign up button -->
+    <div class="popup su">
+        <div class="close-button" id="close-signup">&times;</div> <!-- &times; prints an x close -->
+        <div class="login-form">
+            <h2> Sign Up </h2>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Enter email">
+            </div>
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password" name="password1" placeholder="Enter password">
+            </div>
+            <div class="form-element">
+                <label for="password">Confirm Password</label>
+                <input type="password" name="password2" placeholder="Enter password">
+            </div>
+            <div class="form-element">
+                <button type="submit"> Sign Up </button>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="banner">
+		<div class="image-container">
+			<img src="images/puppy.jpg" alt="Cute Dog Picture in Banner" class="bannerpic">
+        </div>
+		<div class="bannerlink">
+			<h1>Save a Life</h1>
+			<p>
+				Donate Today
+				<a href="donate.html">
+					<img src="images/paw_print.png" alt="Click here to go to the support us page.">
+				</a>
+			</p>
+		</div>
+	</div>
+    -->
+    <div class="about-container">
+    </div>
+
+
+    <br>
+    <div>
+        <footer>
+            Contact Us:
+            <!-- contact details: email, ph number, address, etc. -->
+        </footer>
+    </div>
+
+</body>
+</html>

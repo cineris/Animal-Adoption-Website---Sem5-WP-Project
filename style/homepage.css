@@ -15,7 +15,7 @@ header{
     justify-content: flex-end;
     align-items: center;
 }
-header img{
+header img, header a{
     width: 90px;
     height: 90px;
     cursor: pointer;

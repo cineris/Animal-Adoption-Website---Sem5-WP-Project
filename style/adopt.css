@@ -1,0 +1,276 @@
+* {
+ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+}
+body{
+    background-color: #FEFFCB;
+    font-family: sans-serif;
+}
+/* navbar styles */
+/* logo */
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header img, header a{
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    margin-right: auto;
+}
+.nav-bg-container{
+    background-image: linear-gradient(to bottom, #FFD939AA,#FEFFCB88), url("../images/puppy.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+}
+
+/* adopt, donation, sponsor nav links */
+.nav_links{
+    margin-right: 10px;
+}
+.nav_links li{
+    list-style: none;
+    display: inline-block;
+}
+.nav_links a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #fff;  /* blue:040CB3 purple: 6315B3*/
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+    transition: 0.5s;
+}
+.nav_links a:hover{
+    color: #040CB3;
+    opacity: 90%;
+}
+
+/* login/signup buttons */
+.userlogins {
+    margin-right: 15px;
+}
+header button{
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    margin: 0px 3px;
+    background-color: #040CB3;
+    cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+    color: #fff;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+    transition: 0.5s;
+}
+header button:hover{
+    background-color: #186ED6;
+    opacity: 95%;
+}
+
+
+img{
+    width: 100%;
+    display: block;
+}
+.container{
+    width: 88vw;
+    margin: 0 auto;
+}
+.animals{
+   /*background-color: blueviolet; */
+   background: var(--alice-blue);
+    padding: 3.2rem 0;
+}
+
+.adopt-animal{
+    margin: 2rem;
+    position:relative;
+    border-color: black;
+    border-style: double;
+    background-color: wheat;
+
+}
+
+/*
+
+.animal-image{
+    background: var(--white-light);
+    box-shadow: 0 0 20px 10px var(--white-light);
+    padding-top: 10px;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: background 0.5s ease;
+} */
+
+.animal-information{
+    background:whitesmoke;
+    padding: 10px;
+
+    color: black;
+    display:block;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.animalpics{
+    width: 220px;
+    height: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+
+}
+
+@media screen and (min-width: 992px){
+    .animals{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1200px){
+    .animals{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .adopt-animal{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 1336px){
+    .animals{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.heading{
+
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-decoration: indigo;
+    text-shadow: ivory;
+
+}
+
+.FormAdopt{
+    width: max-content;
+    height: max-content;
+
+    border-width: 3px;
+    border-style: ridge;
+    padding: 30px;
+    background-color: rgb(252, 215, 8);
+    border-radius: 5%;
+
+}
+.adoptform{
+    position: relative;
+    /*text-align: center;
+    margin: auto;
+    top: 50%;
+    width: 20%;  */
+    width: 88vw;
+    margin: 0 40px;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    bottom: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+#contact a {
+    color: #a683e3;
+    margin: 10px;
+}
+
+#contact {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #a683e3;
+}
+
+#icon {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s, box-shadow 0.5s;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 12%), 0 2px 2px rgb(0 0 0 / 24%);
+}
+
+#icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+#icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 5px 5px rgb(0 0 0 / 12%), 0 3px 5px rgb(0 0 0 / 24%);
+}
+
+#contact p {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 426px) {
+    #icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    ul li {
+        font-size: 12px;
+    }
+
+    #contact p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    #icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    ul li {
+        font-size: 20px;
+    }
+
+    #contact p {
+        font-size: 16px;
+    }
+}
