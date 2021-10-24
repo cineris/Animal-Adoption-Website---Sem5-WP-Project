@@ -157,64 +157,62 @@
                 </div>
             </div>
 
-            <br><hr><br><br>
+            <br><br><br>
 
             <div class="adoptform">
                 <div id="heading">
                    <p id="line"> Hey if you are interested in adopting any of these cuties, fill up this form and we will get back to you! </p><br><br>
                 </div>
 
-                <div id="form-container">
+                <div id="adopt-form-container">
 
                     <form action="http://localhost/WP/WP_Project/adopt.php" name="AdoptMe" class="FormAdopt" method="post" onsubmit="validate()">
 
-                        <hr><br>
-                        <label for="name">Enter your Name : </label>
-                        <input id="name" name="name1" placeholder="Name" type="text" required></input>
-                        <br><br><hr><br>
+                        <div class="form-element">
+                            <label for="name">Enter your Name : </label>
+                            <input id="name" name="name1" placeholder="Name" type="text" required></input>
+                        </div>
 
-                        <label for="em">Enter your Email ID : </label>
-                        <input id="em" name="email" placeholder="Email ID" type="email" required></input>
-                        <br><br><hr><br>
-
-
-                        <label for="no">Enter your Mobile Number : </label>
-                        <input id="no" name="number" placeholder="Mobile Number" type="text"  required></input>
-                        <br><br><hr><br>
-
-                        <label for="address">Enter your Address : </label><br>
-                        <textarea name="address" id="address" cols="50" rows="6" placeholder="Address" required></textarea>
-                        <br><br><hr><br>
-
+                        <div class="form-element">
+                            <label for="em">Enter your Email ID : </label>
+                            <input id="em" name="email" placeholder="Email ID" type="email" required></input>
+                        </div>
+                        <div class="form-element">
+                            <label for="no">Enter your Mobile Number : </label>
+                            <input id="no" name="number" placeholder="Mobile Number" type="text"  required></input>
+                        </div>
+                        <div class="form-element">
+                            <label for="address">Enter your Address : </label><br>
+                            <textarea name="address" id="address" cols="50" rows="6" placeholder="Address" required></textarea>
+                        </div>
                         <!--Dropdown menu with predefined option -->
-                        <label for="pet">Enter the PET ID : </label>
-                        <select id="pet" name="petname" placeholder="PET ID" required>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
+                        <div class="form-element">
+                            <label for="pet">Enter the PET ID : </label>
+                            <select id="pet" name="petname" placeholder="PET ID" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
 
-
-                        </select>
-                        <br><br><hr><br>
-
-
-                        <button type="submit" name="submit">Submit Form! </button>
-                        <br>
-
+                        </div>
+                        <div class="form-element">
+                            <button type="submit" name="submit">Submit Form! </button>
+                        </div>
                     </form>
                 </div>
             </div>
 
         </main>
 
-        <br><br><hr><br>
+        <br><br><br>
 
+        <!-- footer -->
         <footer id="contact">
         <ul>
         <div id="icon-container">

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #FEFFCB;
+    background-color: #fff;
     font-family: sans-serif;
 }
 /* navbar styles */
@@ -85,7 +85,7 @@ header button:hover{
     align-items: center;
     text-align: left;
     font-family: sans-serif;
-    margin: 20px 240px;
+    margin: 50px 240px;
     padding: 45px 60px;
     border-radius: 30px;
     background-color: #FFD939;
@@ -123,4 +123,92 @@ header button:hover{
     position: relative;
     left: 50%;
     transform: translate(-50%);
+}
+
+/* footer */
+footer {
+    width: 100%;
+    bottom: 0;
+}
+footer p {
+    color: #040CB3;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+#contact a {
+    color: #040CB3;
+    margin: 10px;
+}
+
+#contact {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: none;
+}
+
+#icon {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s, box-shadow 0.5s;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 12%), 0 2px 2px rgb(0 0 0 / 24%);
+}
+
+#icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+#icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 5px 5px rgb(0 0 0 / 12%), 0 3px 5px rgb(0 0 0 / 24%);
+}
+
+#contact p {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 426px) {
+    #icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    ul li {
+        font-size: 12px;
+    }
+
+    #contact p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    #icon {
+        width: 50px;
+        height: 50px;
+    }
+    ul li {
+        font-size: 20px;
+    }
+
+    #contact p {
+        color: #040CB3
+        font-size: 16px;
+    }
 }

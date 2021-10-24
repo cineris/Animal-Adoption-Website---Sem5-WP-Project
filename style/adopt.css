@@ -4,7 +4,7 @@
  box-sizing: border-box;
 }
 body{
-    background-color: #4D4D4D;
+    background-color: none;
     /*background-image: url("../images/bg.jpg");
     background-position: center;  FEFFCB*/
     font-family: sans-serif;
@@ -80,7 +80,55 @@ header button:hover{
     opacity: 95%;
 }
 
+/* adopt form */
+#adopt-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-family: sans-serif;
+    margin: 20px 240px;
+    padding: 45px 60px;
+    border-radius: 30px;
+    background-color: #FFD939;
+}
 
+.FormAdopt .form-element{
+    margin: 15px 400px;
+}
+
+.FormAdopt .form-element input[type='text'],
+.FormAdopt .form-element input[type='email'],
+.FormAdopt .form-element input[type='number'],
+.FormAdopt .form-element textarea,
+.FormAdopt .form-element select {
+    margin: 5px 0px;
+    display: block;
+    padding: 5px;
+    width: 50vw;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+}
+
+.FormAdopt .form-element button{
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #040CB3;
+    cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+    color: #fff;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+    transition: 0.5s;
+    /* centering button */
+    margin: 0;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
 img{
     width: 100%;
     display: block;
@@ -93,38 +141,26 @@ img{
    /*background-color: blueviolet; */
    background: var(--alice-blue);
     padding: 3.2rem 0;
-    
+
 }
 
 .adopt-animal{
     margin: 2rem;
     position:relative;
-    border:2px solid black;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-   
-    background-color:#E2E3B6;
-    /*  #E2E3B6  border-radius: 15px;
-   */
-
+    box-shadow: 0px 0px 15px #dcdcdc;
+    border-radius: 30px;
+    transform: scale(1);
+    transition: transform 1s;
 }
 
-/*
-.animal-image{
-    background: var(--white-light);
-    box-shadow: 0 0 20px 10px var(--white-light);
-    padding-top: 10px;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    border-radius: 50%;
-    transition: background 0.5s ease;
-} */
+.adopt-animal:hover{
+    transform: scale(1.05);
+}
+
 
 .animal-information{
-    background:#E2E3AA;
+    background:#FFDB88;
     padding: 10px;
-
     color: black;
     display:block;
     text-decoration: none;
@@ -133,6 +169,8 @@ img{
     font-weight: bold;
     border-color: black;
     border-width: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .animalpics{
@@ -140,25 +178,8 @@ img{
     height: 250px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-   
-   /* padding-top: 10px;
-    padding-bottom: 10px;
-    width: 220px;
-    height: 200px;
-    */
     margin: 0 auto;
-    
-}
-.animal-image{
-    transition:transform 0.25s ease;
 
-}
-.animal-image>img :hover {
-   /* width:300px;
-    height:300px;*/
-
-    -webkit-transform:scale(1.5); /* or some other value */
-    transform:scale(1.5);
 }
 
 @media screen and (min-width: 992px){
@@ -197,15 +218,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 
-}
-
-#line{
-
-    /*color: #FEFFCB;
-    background-color: #CCCDE3;*/
-    
 
 }
 
@@ -214,31 +227,16 @@ img{
     justify-content: center;
     align-items: center;
     text-align: left;
-    
 }
-
-.FormAdopt{
-    width: 50%;
-    height: max-content;
-    border-width: 3px;
-    border-style: ridge;
-    padding: 45px;
-    background-color:#E2E3B6;
-
-    border-radius: 5%;  
-    margin: 20px 240px;
-    background-color: #FFF2BF;
-
-
-}
-
 
 /* footer */
 footer {
     width: 100%;
     bottom: 0;
 }
-
+footer p {
+    color: #040CB3;
+}
 ul {
     margin: 0;
     padding: 0;
@@ -249,7 +247,7 @@ ul li {
 }
 
 #contact a {
-    color: #a683e3;
+    color: #040CB3;
     margin: 10px;
 }
 
@@ -260,7 +258,7 @@ ul li {
     justify-content: center;
     align-items: center;
     height: 200px;
-    background-color: #a683e3;
+    background-color: #fff;
 }
 
 #icon {
@@ -309,12 +307,12 @@ ul li {
         width: 50px;
         height: 50px;
     }
-
     ul li {
         font-size: 20px;
     }
 
     #contact p {
+        color: #040CB3
         font-size: 16px;
     }
 }
