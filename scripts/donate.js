@@ -37,11 +37,6 @@ function validate() {
     if (!document.getElementById("cvv").value.match(reg2)) {
         alert("CVV should be only of 3 digits");
     }
-
-    let regupi = /^[0-9]{10,10}$/;
-    if (!document.getElementById("upiid").value.match(regupi)) {
-        alert("UPI ID should be only of 10 digits");
-    }
 }
 
 
@@ -74,20 +69,8 @@ function dropdown(){
         lab2.appendChild(t2);
         d.insertBefore(lab2,document.getElementById("cvv"));
         d.appendChild(card2);
-        
-    } else if (pay == "2") {
-        d.appendChild(document.createElement("br"));
-        let labupi = document.createElement("label");
-        let tupi = document.createTextNode("UPI ID: ");
-        let upinum = document.createElement("input");
-        upinum.setAttribute("type","number");
-        upinum.setAttribute("id","upiid");
-        labupi.setAttribute("for","upiid");
-        labupi.appendChild(tupi);
-        d.insertBefore(labupi,document.getElementById("upiid"));
-        d.appendChild(upinum);
 
-    } else if (pay == "3") {
+    } else if (pay == "2") {
         d.appendChild(document.createElement("br"));
         let labnb1 = document.createElement("label");
         let tnb1 = document.createTextNode("HDFC Bank");
