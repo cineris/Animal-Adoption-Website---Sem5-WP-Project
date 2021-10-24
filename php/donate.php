@@ -1,5 +1,6 @@
 <?php
-    if (isset($_POST['submit'])){
+    if (isset($_POST['donate-submit'])){
+        echo "test";
         $name = $_POST['Name'];
         $email = $_POST['email'];
         $number = $_POST['contact'];
@@ -9,7 +10,7 @@
     }
 
     $dbHost = 'localhost'; //or localhost
-    $dbName = 'donate'; // your db_name
+    $dbName = 'karlo_adopt'; // your db_name
     $dbUsername = 'root'; // root by default for localhost
     $dbPassword = '';  // by default empty for localhost
 
@@ -24,7 +25,7 @@
         email_id VARCHAR(30) NOT NULL PRIMARY KEY,
         phone_number NUMERIC NOT NULL,
         address VARCHAR(50) NOT NULL,
-        amount NUMERIC NOT NULL),
+        amount NUMERIC NOT NULL,
         payment_method VARCHAR(10) NOT NULL)";
 
     if(mysqli_query($conn, $sql))

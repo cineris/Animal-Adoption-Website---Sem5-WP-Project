@@ -7,7 +7,7 @@
     }
 
     $dbHost = 'localhost'; //or localhost
-    $dbName = 'adoptme'; // your db_name
+    $dbName = 'karlo_adopt'; // your db_name
     $dbUsername = 'root'; // root by default for localhost
     $dbPassword = '';  // by default empty for localhost
 

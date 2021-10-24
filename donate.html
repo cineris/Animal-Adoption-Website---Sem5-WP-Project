@@ -27,7 +27,7 @@
 
         <!-- donation form -->
         <div class="donation-form-container">
-        <form class="donation-form" action="http://localhost/WP/WP_Project/donate.php" onsubmit="validate()">
+        <form class="donation-form" action="http://localhost/WP/WP_Project/donate.php" method="post" onsubmit="validate()">
             <div class="form-element">
                 <label for="Name">Name:</label>
                 <input type="text" name="Name" id="Name">
@@ -68,7 +68,7 @@
             </div>
             <br>
             <div class="form-element">
-                <button type="submit"> Submit </button>
+                <button type="submit" name="donate-submit"> Submit </button>
             </div>
         </form>
         </div>

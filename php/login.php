@@ -1,11 +1,11 @@
 <?php
-    if (isset($_POST['submit'])){
+    if (isset($_POST['lg-submit'])){
         $email = $_POST['email'];
         $pass1 = $_POST['password'];
     }
 
     $dbHost = 'localhost'; //or localhost
-    $dbName = 'register'; // your db_name
+    $dbName = 'karlo_adopt'; // your db_name
     $dbUsername = 'root'; // root by default for localhost
     $dbPassword = '';  // by default empty for localhost
 

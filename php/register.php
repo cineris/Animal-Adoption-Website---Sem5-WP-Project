@@ -1,16 +1,16 @@
 <?php
-    if (isset($_POST['submit'])){
+    if (isset($_POST['su-submit'])){
         $email = $_POST['email'];
         $pass1 = $_POST['password1'];
         $pass2 = $_POST['password2'];
     }
     if ($pass2 != $pass1){
         echo "Passwords Must Match. Be better.";
-        header('location: ../WP_Project.html');
+        header('location: ../index.html');
     }
 
     $dbHost = 'localhost'; //or localhost
-    $dbName = 'register'; // your db_name
+    $dbName = 'karlo_adopt'; // your db_name
     $dbUsername = 'root'; // root by default for localhost
     $dbPassword = '';  // by default empty for localhost
 

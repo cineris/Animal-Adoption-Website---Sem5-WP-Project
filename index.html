@@ -30,6 +30,7 @@
     <div class="popup lg">
         <div class="close-button" id="close-login">&times;</div> <!-- &times; prints an x close -->
         <div class="login-form">
+            <form id="lg-form" action="http://localhost/WP/WP_Project/login.php" method="post">
             <h2> Log In </h2>
             <div class="form-element">
                 <label for="email">Email</label>
@@ -44,11 +45,12 @@
                 <label for="remember-me">Remember Me</label>
             </div>
             <div class="form-element">
-                <button type="submit"> Login </button>
+                <button type="submit" name="lg-submit"> Login </button>
             </div>
             <div class="form-element">
                 <a href="#"> Forgot Password? </a>
             </div>
+            </form>
         </div>
     </div>
 
@@ -56,6 +58,7 @@
     <div class="popup su">
         <div class="close-button" id="close-signup">&times;</div> <!-- &times; prints an x close -->
         <div class="login-form">
+            <form id="su-form" name="su-form" action="http://localhost/WP/WP_Project/register.php" method="post">
             <h2> Sign Up </h2>
             <div class="form-element">
                 <label for="email">Email</label>
@@ -70,8 +73,9 @@
                 <input type="password" name="password2" placeholder="Enter password">
             </div>
             <div class="form-element">
-                <button type="submit"> Sign Up </button>
+                <button type="submit" name="su-submit"> Sign Up </button>
             </div>
+            </form>
         </div>
     </div>
     <!--
