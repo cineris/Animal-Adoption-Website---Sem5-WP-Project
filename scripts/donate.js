@@ -12,7 +12,7 @@ function validate() {
     }
 
     let contact_regex = /^[0-9]{10,10}$/;
-    let con = document.getElementById("contact").value;
+    let con = document.getElementById("contactnum").value;
     if (!con.match(contact_regex)) {
         alert("Please enter your Contact number in right format");
     }
