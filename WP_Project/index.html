@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!-- color palette - https://www.canva.com/colors/color-palettes/toasted-peach/ -->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style/homepage.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <script src="scripts/login_popup.js" charset="utf-8"></script>
+    <title>Karlo Adopt!</title>
+</head>
+<body>
+    <!-- header and navbar -->
+    <div class="nav-bg-container">
+    <header>
+        <a href="index.html"><img src="images/corgi.png" alt="logo"></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="adopt.html">Adopt</a></li>
+                <li><a href="donate.html">Donation</a></li>
+                <li><a href="sponsor.html">Sponsor</a></li>
+            </ul>
+        </nav>
+        <div class="userlogins">
+            <a href="#"><button type="button" id="login-button"> Login </button></a>
+            <a href="#"><button type="button" id="signup-button"> Sign Up </button></a>
+        </div>
+    </header>
+    </div>
+    <br>
+
+    <!-- log in/sign up -  pop up form -->
+    <div class="popup lg">
+        <div class="close-button" id="close-login">&times;</div> <!-- &times; prints an x close -->
+        <div class="login-form">
+            <form id="lg-form" action="http://localhost/WP/WP_Project/php/login.php" method="post">
+            <h2> Log In </h2>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Enter email">
+            </div>
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Enter password">
+            </div>
+            <div class="form-element">
+                <input type="checkbox" name="remember-me" id="remember-me">
+                <label for="remember-me">Remember Me</label>
+            </div>
+            <div class="form-element">
+                <button type="submit" name="lg-submit"> Login </button>
+            </div>
+            <div class="form-element">
+                <a href="#"> Forgot Password? </a>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- sign up button -->
+    <div class="popup su">
+        <div class="close-button" id="close-signup">&times;</div> <!-- &times; prints an x close -->
+        <div class="login-form">
+            <form id="su-form" name="su-form" action="http://localhost/WP/WP_Project/php/register.php" method="post">
+            <h2> Sign Up </h2>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Enter email">
+            </div>
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password" name="password1" placeholder="Enter password">
+            </div>
+            <div class="form-element">
+                <label for="password">Confirm Password</label>
+                <input type="password" name="password2" placeholder="Enter password">
+            </div>
+            <div class="form-element">
+                <button type="submit" name="su-submit"> Sign Up </button>
+            </div>
+            </form>
+        </div>
+    </div>
+    <!--
+    <div class="banner">
+		<div class="image-container">
+			<img src="images/puppy.jpg" alt="Cute Dog Picture in Banner" class="bannerpic">
+        </div>
+		<div class="bannerlink">
+			<h1>Save a Life</h1>
+			<p>
+				Donate Today
+				<a href="donate.html">
+					<img src="images/paw_print.png" alt="Click here to go to the support us page.">
+				</a>
+			</p>
+		</div>
+	</div>
+    -->
+
+    <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About Us</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2009-2011</h4>
+                                <h4 class="subheading">Our Humble Beginnings</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">At Karlo Adopt, our mission is to place healthy and treatable adoptable pets into permanent homes. Our goal is to be a resource for you throughout the life of your new pet and beyond!</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>March 2011</h4>
+                                <h4 class="subheading">Our First Official Adoption</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Pet adoption is the process of transferring responsibility for a pet that was previously owned by another party such as a person, shelter, or rescue organization. Some organizations give adopters ownership of the pet, while others use a guardianship model wherein the organization retains some control over the animal's future use or care.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>December 2015</h4>
+                                <h4 class="subheading">Transition to Full Service</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>July 2020</h4>
+                                <h4 class="subheading">Opening Adoption Centres</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">We here at Kar Lo Adopt staunchly believe in Adopt, Don't Shop. In case you are not in a position to adopt, you can contribute in various other ways which would benefit the animals. Feel free to <a href="adopt.html">adopt</a> or <a href="donate.html">donate</a> according to your convenience.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image" id="final-image">
+                            <h4>
+                                Be Part
+                                <br>
+                                Of Our
+                                <br>
+                                Story!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    <br>
+    <!-- footer -->
+    <footer id="contact">
+    <ul>
+    <div id="icon-container">
+        <a href="#">
+            <div id="icon">
+                <li><i class="fab fa-twitter"></i></li>
+            </div>
+        </a>
+        <a href="#">
+            <div id="icon">
+                <li><i class="fab fa-instagram"></i></li>
+            </div>
+        </a>
+        <a href="#">
+            <div id="icon">
+              <li><i class="fab fa-facebook-f"></i></li>
+            </div>
+        </a>
+        <a href="#">
+            <div id="icon">
+              <li><i class="far fa-envelope"></i></li>
+            </div>
+        </a>
+    </div>
+    </ul>
+    <p>&copy 2020-2021, Kar Lo Adopt.</p>
+    </footer>
+
+</body>
+</html>
